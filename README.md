@@ -13,7 +13,7 @@ To run this tool on your device (Termux, Linux, or PC), execute the following co
 
 ```bash
 # Clone the repository
-git clone https://github.com/GhostTrack-housseini.git
+git clone https://github.com/housseini1960/GhostTrack-housseini.git
 
 # Navigate into the project folder
 cd GhostTrack-housseini
