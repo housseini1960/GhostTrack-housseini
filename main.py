@@ -74,13 +74,13 @@ async def check_site(session, site_name, url_template, username):
 # Gestionnaire asynchrone qui lance TOUTES les requêtes en même temps
 async def scan_all_platforms(username):
     platforms = {
-        "GitHub": "https://github.com{}",
+        "GitHub": "https://github.com/{}",
         "Instagram": "https://instagram.com{}",
         "TikTok": "https://tiktok.com@{}",
         "Pinterest": "https://pinterest.com{}",
         "Twitter/X": "https://x.com{}",
-        "YouTube": "https://youtube.com@{}",
-        "Reddit": "https://reddit.com{}",
+        "YouTube": "https://youtube.com/@{}",
+        "Reddit": "https://reddit.com/r/{}",
         "Spotify": "https://spotify.com{}"
     }
     
