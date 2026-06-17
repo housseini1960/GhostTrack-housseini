@@ -65,12 +65,12 @@ async def check_site(session, site_name, url_template, username):
         # Requête asynchrone avec un timeout de 4 secondes maximum
                 async with session.get(url, headers=headers, timeout=aiohttp.ClientTimeout(total=15), ssl=False) as response:
 
-            if response.status == 200:
+                if response.status == 200:
                 print(f"[+] FOUND - {site_name}: {url}")
-            else:
+                else:
                 print(f"[-] Not found - {site_name}")
      except Exception as e:
-        print(f"[-] Erreur pour {site_name} : {e}")
+                print(f"[-] Erreur pour {site_name} : {e}")
 
 
 # Gestionnaire asynchrone qui lance TOUTES les requêtes en même temps
