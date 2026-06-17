@@ -63,7 +63,7 @@ async def check_site(session, site_name, url_template, username):
     headers = {"User-Agent": random.choice(USER_AGENTS)}
     try:
         # Requête asynchrone avec un timeout de 4 secondes maximum
-        async with session.get(url, headers=headers, timeout=4) as response:
+        async with session.get(url, headers=headers, timeout=15) as response:
             if response.status == 200:
                 print(f"[+] FOUND - {site_name}: {url}")
             else:
@@ -131,4 +131,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
